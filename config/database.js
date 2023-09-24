@@ -12,11 +12,11 @@ module.exports = ({ env }) => ({
       password: env("DATABASE_PASSWORD", "Gmail0511~!"),
     },
     useNullAsDefault: true,
-  },
-  ssl: true,
-  extra: {
-    ssl: {
-      rejectUnauthorized: false,
+    ssl: true,
+    extra: {
+      ssl: {
+        rejectUnauthorized: false,
+      },
     },
   },
 });
